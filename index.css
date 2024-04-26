@@ -4,7 +4,6 @@
 *{ box-sizing: border-box;}
         body{ 
             margin: 0;
-            transition: background-color 1s ease; /* 배경색 전환에 1초 동안 ease 효과 적용 */
             overflow: hidden; /* 스크롤 숨기기 */
              
         }
