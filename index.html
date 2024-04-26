@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LeeChanSin</title>
     <link rel="stylesheet" href="index.css">
     <style>
-        
+        body{ 
+            transition: background-color 1s ease; /* 배경색 전환에 1초 동안 ease 효과 적용 */ 
+        }
+        .blink-effect {
+            opacity: 0.1;
+            transition: opacity 2s ease;
+         }
     </style>
 </head>
-<body>
+<body class="blink-effect">
     <div class="menu">
         <span></span>
         <span></span>
@@ -20,13 +25,21 @@
     <div class="wrap">
         
         <div class="content">
-            <div class="content-text-h1">
-                <h1>Signature Ceramic Vase ㅡ</h1>
-                <h1>Signature Ceramic Vase ㅡ</h1>
+            <div class="content-text-1">
+                <div>신속하고 안정적인 서비스를 만들어 드리는</div>
+                <div>백엔드 개발자 "이찬신" 입니다.</div>
             </div>
         </div>
-        <div class="content"></div>
-        <div class="content"></div>
+        <div class="content">
+            <div class="content-text-2">
+                <h1>두번째</h1>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-text-3">
+                <h1>세번째</h1>
+            </div>
+        </div>
     </div> 
 </body>
 <script src="index-scroll.js"> </script>

@@ -1,10 +1,15 @@
+
+  
+
 *{ box-sizing: border-box;}
         body{ 
             margin: 0;
-            
+            transition: background-color 1s ease; /* 배경색 전환에 1초 동안 ease 효과 적용 */
             overflow: hidden; /* 스크롤 숨기기 */
+             
         }
-       
+        
+
         .menu{
             height: 100px;
             position: fixed; top: 50%; right: 10px;
@@ -33,28 +38,32 @@
             justify-content: center;
             align-items: center;
         }
-        .content-text-h1{
-            position: absolute;
+        .content-text-1{
+            text-align: center;
+            font-weight: bold;
             padding: 80px 50px; /* 조정 가능한 패딩 값 */
-            font-size: 2em;
-            top: 114px;
-            left: 20px;
-            color: white;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 4em;
+            color: black;
+            
         }
         
+        .content-text-1 > div {
+            margin-bottom: 5%; /* div 간격 조정 */
+        }
+
         .content:nth-child(1){
-            background-image: url("https://cdn.imweb.me/thumbnail/20180829/5b863eabb95ac.jpg");
-            background-size: cover;
+            background-color: white;
+            
             
         }
         .content:nth-child(2){
-            background-image: url("../image/47439.png");
-            background-size: cover;
+            background-color: black;
+            color: white;
+            
         }
         .content:nth-child(3){
-            background-image: url("../image/back.jpg");
-            background-size: cover;
+            background-color: black;
+            color: white;
         }
         .content > h1{
             display: block;
