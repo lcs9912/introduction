@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LeeChanSin</title>
     <link rel="stylesheet" href="index.css">
+    
     <style>
         body{ 
             transition: background-color 1s ease; /* 배경색 전환에 1초 동안 ease 효과 적용 */ 
         }
         .blink-effect {
             opacity: 0.1;
-            transition: opacity 2s ease;
+            transition: opacity 3s ease;
          }
     </style>
     <script>
@@ -21,29 +22,139 @@
         });
     </script>
 </head>
-<body class="blink-effect">
+
+<body class="blink-effect" oncontextmenu="return false" onselectstart="return false" ondragstart="return false" onkeydown="return true">
     <div class="menu">
+        <span></span>
+        <span></span>
         <span></span>
         <span></span>
         <span></span>
     </div>
     
     <div class="wrap">
-        
         <div class="content">
             <div class="content-text-1">
-                <div>신속하고 안정적인 서비스를 만들어 드리는</div>
+                <div>호기심으로</div>
+                <div>개발에 몰입하는</div>
                 <div>백엔드 개발자 "이찬신" 입니다.</div>
+            </div>
+            <div class="content1-profile">
+                <div class="profile-img">
+                    <img src="/img/profileImg.jpg">
+                    <span class="intro">
+                        열어주셔서 감사합니다. 
+                        많은 관심 부탁드립니다.
+                    </span>
+                </div>
             </div>
         </div>
         <div class="content">
             <div class="content-text-2">
-                <h1>두번째</h1>
+                <h1>이런 성향의 개발자입니다.</h1>
+                <!-- <h1 class="grow bold black-point">"호기심으로"</h1>
+                <h1 class="bold">
+                    개발에 몰입하는 개발자 <br />
+                    이찬신 입니다<span class="black-point">.</span>
+                </h1>
+                <div class="aboutMe normal">
+                    <p class="black-point">
+                    “노력은 기회를 만들고, 기회는 경험을 만들고, 경험은 지식을
+                    만든다.”
+                    </p>
+                    라는 가치관으로 무엇이든 경험하려고 합니다. <br />
+                    꾸준한 노력 덕에 교내대회에서 수상하여 외부에서 다양한 부스 운영한
+                    경험이 있습니다. <br />
+                    <br />
+
+                    <p class="black-point">사용자 경험을 중요하게 생각합니다.</p>
+                    기존에 불편했던 학교 입학 지원 서비스, 학교 공식 홈페이지를 개발한
+                    경험이 있습니다.<br />
+                    총 2,000명 이상의 사용자가 접속하였고, 검색엔진에 약 3,000번
+                    노출되었습니다.<br />
+                    <br />
+
+                    <p class="black-point">
+                    지식을 다른 사람들과 공유하고, 기록하는 것을 좋아합니다.
+                    </p>
+                    스터디를 기획하고 운영하며 지식을 나누고 팀원들과 함께 성장하려고
+                    합니다. <br />
+                    블로그를 운영하고, 다양한 주제에 대해 60개 이상의 포스팅을
+                    작성하였습니다.
+                </div> -->
             </div>
         </div>
         <div class="content">
             <div class="content-text-3">
-                <h1>세번째</h1>
+                <div class="frontend-skill skill-box">
+                    <div class="skill-title">Frontend</div>
+                    <div class="skill-icon">
+                        <img src="/img/html.png">
+                        <img src="/img/css.png">
+                        <img src="/img/js.webp">
+                        <img src="/img/JQuery.png">
+                        <img src="/img/vue.png">
+                    </div>
+                </div>
+                <div class="backend-skill skill-box">
+                    <div class="skill-title">Backend</div>
+                    <div class="skill-icon">
+                        <img src="/img/java.png">
+                        <img src="/img/springboot.png">
+                        <img src="/img/jsp.png">
+                    </div>
+                </div>
+                <div class="app-skill skill-box">
+                    <div class="skill-title">Mobile App</div>
+                    <div class="skill-icon">
+                        <img src="/img/flutter.png">
+                        <img src="/img/dart.png">
+                    </div>
+                </div>
+                <div class="database-skill skill-box">
+                    <div class="skill-title">Database</div>
+                    <div class="skill-icon">
+                        <img src="/img/mysql.png">
+                        <img src="/img/oracle.png">
+                        <img src="/img/firebase.png">
+                    </div>
+                </div>
+                <div class="deployment-skill skill-box">
+                    <div class="skill-title">Deployment</div>
+                    <div class="skill-icon">
+                        <img src="/img/aws.png">
+                    </div>
+                </div>
+                <div class="version-control-skill skill-box">
+                    <div class="skill-title">Version Control</div>
+                    <div class="skill-icon">
+                        <img src="/img/git.png">
+                        <img src="/img/github.png">
+                        <img src="/img/fork.png">
+                    </div>
+                </div>
+                <div class="communication-skill skill-box">
+                    <div class="skill-title">Communication</div>
+                    <div class="skill-icon">
+                        <img src="/img/jira.png">
+                        <img src="/img/figma.png">
+                        <img src="/img/erdcloud.png">
+                    </div>
+                </div>
+                <!-- 자격증 -->
+                <!-- <div class="certificate-skill skill-box">
+                    <div class="skill-title">Certificate</div>
+                </div> -->
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-text-4">
+                <h1>자신있는 기술</h1>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-text-5">
+                <h1>project</h1>
             </div>
         </div>
     </div> 

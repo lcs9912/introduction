@@ -5,10 +5,8 @@
         body{ 
             margin: 0;
             overflow: hidden; /* 스크롤 숨기기 */
-             
+            width: 100%;
         }
-        
-
         .menu{
             height: 100px;
             position: fixed; top: 50%; right: 10px;
@@ -30,88 +28,94 @@
         .menu > span:active{
             background-color: white;
         }
+        .wrap{
+            width: 100%;
+        }
         .content{ 
             height: 100vh;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
         }
         .content-text-1{
+            width: 50%;
             text-align: center;
             font-weight: bold;
-            padding: 80px 50px; /* 조정 가능한 패딩 값 */
-            font-size: 4em;
+            /* padding: 80px 50px; 조정 가능한 패딩 값 */
+            font-size: 3em;
             color: black;
             
         }
         
         .content-text-1 > div {
-            margin-bottom: 5%; /* div 간격 조정 */
+            margin-bottom: 2%; /* div 간격 조정 */
         }
 
-        .content:nth-child(1){
-            background-color: white;
-            
+        .content1-profile{
+            width: 50%;
+            height: 100vh;
+            position: relative;
+        }
+        .profile-img{
+            display: inline-block;
+            position: absolute;
+            top: 185px;
+            left: 200px;
+        }
+        .profile-img img{
+            border-radius: 50%;
+            background-size: cover;
+            width: 24%;
             
         }
+        .intro{
+            display: inline-block;
+            font-size: 2em;
+        }
+        .content:nth-child(1) {
+            background: linear-gradient(80deg,white, white 50%, green 50%);
+        }
         .content:nth-child(2){
-            background-color: black;
+            background-color: #242424;
             color: white;
             
         }
         .content:nth-child(3){
-            background-color: black;
+            
+            background-color: #242424;
+            color: white;
+        }
+        .content:nth-child(4){
+            
+            background-color: #242424;
+            color: white;
+        }
+        .content:nth-child(5){
+            background-color: #242424;
             color: white;
         }
         .content > h1{
             display: block;
         }
-        .gridPage-move-btn{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration-line: none;
-            color: white;
-            border: 1px solid white;
-            background-color: rgba(0, 0, 0, 0.3);
-            width: 200px; height: 50px;
-            position: relative;
-            top: 191px;
-        }
-
-        /* 헤더 */
         
-        #header-main-container {
-            background-color: rgba(0, 0, 0, 0);
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 80px 75px; /* 조정 가능한 패딩 값 */
-            
-            color: white;
+    
+        .skill-box{
+            display: inline-block;
+            background-color: white;
+            border-radius: 10%;
+            width: 20%;
+            height: auto;
         }
-
-        #header-main-container h1 {
-            margin: 0;
-            
+        .skill-title{
+            color: orange;
+            font-weight: bold;
+            border-bottom: 1px solid #242424;
+            text-align: center;
+            padding: 10px;
         }
-
-        #header-main-container div {
-            display: flex;
+        .skill-icon{
+           height: auto;
         }
-
-        #header-main-container div a {
-            margin-right: 10px; /* 링크 사이의 간격 조정 */
-            color: white;
-            text-decoration: none;
-            font-size: 14px; /* 링크 텍스트 크기 */
-        }
-        a{
-            color: white;
-            text-decoration: none;
+        .skill-icon img{
+            width: 50px;
         }
