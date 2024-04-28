@@ -23,6 +23,12 @@ window.addEventListener("wheel", function(e){
     }
 })
 
+function movePage(index) {
+    currentIndex = index;
+    window.scroll({ top: contents[currentIndex].offsetTop, behavior: "smooth"});
+    headerColor(currentIndex);
+}
+
 function headerColor(currentIndex){
     var header = document.getElementById('header');
     if(currentIndex > 0){

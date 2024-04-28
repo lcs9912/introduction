@@ -1,4 +1,7 @@
-*{ box-sizing: border-box;}
+*{ 
+    box-sizing: border-box;
+    
+}
 
 body{ 
     margin: 0;
@@ -16,6 +19,7 @@ body{
     align-items: center;
     width: 100%;
     height: 12%;
+    z-index: 10;
 }
 .header img{
     width: 300px;
@@ -27,7 +31,7 @@ body{
     cursor: pointer;
 }
 
-.nav-keyword{
+.nav-main{
     cursor: pointer;
 }
 
@@ -169,6 +173,35 @@ body{
     background-color: white;
     color: black;
 }
+
+.content-text-4{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.project-content{
+    margin-top: 5%;
+    width: 100%;
+    height: 100%;
+}
+/* .project-nav{
+    
+    background-color: red;
+    width: 80%;
+    height: 10%;
+} */
+
+.project-content div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+
+/* crayon 프로젝트 */
+
 
 /* Finish 페이지 */
 .content:nth-child(5){

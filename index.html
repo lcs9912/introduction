@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LeeChanSin</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     
     <style>
         body{ 
@@ -26,12 +29,12 @@
 <body class="blink-effect" oncontextmenu="return false" onselectstart="return false" ondragstart="return false" onkeydown="return true">
 
     <div id="header" class="header">
-        <div><img src="img/hlw_black.png" class="nav-keyword"></div>
+        <div><img src="img/hlw_black.png" onclick="movePage(0)" class="nav-main"></div>
         <div class="menu-nav">
-            <a>About me</a>
-            <a>Skills</a>
-            <a>Project</a>
-            <a>Finish</a>
+            <a onclick="movePage(1)" >About me</a>
+            <a onclick="movePage(2)" >Skills</a>
+            <a onclick="movePage(3)" >Project</a>
+            <a onclick="movePage(4)" >Finish</a>
         </div>
     </div>
     
@@ -136,7 +139,28 @@
         </div>
         <div class="content">
             <div class="content-text-4">
-                <h1>project</h1>
+                <div class="project-content">
+                    <div class="project-crayon">
+                        크래용
+                    </div>
+                    <div class="project-indispot">
+                        인디스팟
+                    </div>
+                    <div class="project-piasystem">
+                        piasystem
+                    </div>
+                </div>
+                <!-- <div class="project-nav">
+                    <div class="project-crayon-nav">
+                        크레용
+                    </div>
+                    <div class="project-indispot-nav">
+                        인디스팟
+                    </div>
+                    <div class="project-piasystem-nav">
+                        piasystem
+                    </div>
+                </div> -->
             </div>
         </div>
         <div class="content">
@@ -145,6 +169,29 @@
             </div>
         </div>
     </div> 
+    <script>
+        $(document).ready(function(){
+            $('.project-content').slick({
+                dots : false, 		// 스크롤바 아래 점으로 페이지네이션 여부
+                arrows : true, 		// 옆으로 이동하는 화살표 표시 여부
+            });
+        });
+        // $('.project-content').slick({
+        //     slidesToShow: 1,
+        //     slidesToScroll: 1,
+        //     arrows: false,
+        //     fade: true,
+        //     asNavFor: '.project-nav'
+        // });
+        // $('.project-nav').slick({
+        //     slidesToShow: 3,
+        //     slidesToScroll: 1,
+        //     asNavFor: '.project-content',
+        //     dots: true,
+        //     centerMode: true,
+        //     focusOnSelect: true
+        // });
+    </script>
 </body>
 <script src="index-scroll.js"> </script>
 </html>
