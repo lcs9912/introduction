@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://kit.fontawesome.com/047f82d071.js" crossorigin="anonymous"></script>
     
     <style>
         body{ 
@@ -140,27 +141,23 @@
         <div class="content">
             <div class="content-text-4">
                 <div class="project-content">
-                    <div class="project-crayon">
-                        크래용
+                    <div class="project-ppt">
+                        <div class="project-title">CRAYON</div>
+                        <div class="project-img">
+                            <img src="img/crayon-main.jpg" alt="">
+                        </div>
                     </div>
-                    <div class="project-indispot">
+                    <div class="project-ppt">
                         인디스팟
                     </div>
-                    <div class="project-piasystem">
+                    <div class="project-ppt">
                         piasystem
                     </div>
                 </div>
-                <!-- <div class="project-nav">
-                    <div class="project-crayon-nav">
-                        크레용
-                    </div>
-                    <div class="project-indispot-nav">
-                        인디스팟
-                    </div>
-                    <div class="project-piasystem-nav">
-                        piasystem
-                    </div>
-                </div> -->
+                <div class="indicaotr">
+                    <span class="prevArrow"><i class="fa-solid fa-arrow-left"></i></span>
+                    <span class="nextArrow"><i class="fa-solid fa-arrow-right"></i></span>
+                </div>
             </div>
         </div>
         <div class="content">
@@ -174,6 +171,9 @@
             $('.project-content').slick({
                 dots : false, 		// 스크롤바 아래 점으로 페이지네이션 여부
                 arrows : true, 		// 옆으로 이동하는 화살표 표시 여부
+
+                prevArrow:$('.prevArrow'),
+                nextArrow:$('.nextArrow')
             });
         });
         // $('.project-content').slick({

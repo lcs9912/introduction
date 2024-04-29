@@ -60,7 +60,7 @@ body{
 
     
 .wrap{
-    width: 100%;
+    /* width: 100%; */
 }
 
 /* 한페이지 영역 */
@@ -184,23 +184,67 @@ body{
     margin-top: 5%;
     width: 100%;
     height: 100%;
+    position: relative;
 }
-/* .project-nav{
-    
-    background-color: red;
-    width: 80%;
-    height: 10%;
-} */
 
 .project-content div{
+    display: flex;   
+    align-items: center;
+    width: 80%;
+    height: 90%;
+    margin: 0 auto;
+}
+.project-title{
+    text-align: center;
+}
+/* slick custom style */
+
+.slick-slide{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.slick-slide img{
+    position: absolute;
+    
+    width: 300px;
+}
+.indicaotr{
+    position: relative;
+}
+
+.indicaotr span{
+    
+    display: inline-block;
+    padding: 1%;
+    border: 1px solid black;
+    border-radius: 100%;
+}
+.prevArrow{
+    background-color: red;
+    position: absolute;
+    left: 105px;
+    bottom: 384px;
+}
+.nextArrow{
+    background-color: blue;
+    position: absolute;
+    right: 105px;
+    bottom: 384px;
+}
+
+
+
+/* 내용 프로젝트 */
+/* .project-ppt{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 80%;
 }
-
-/* crayon 프로젝트 */
+.profile-img img{
+    width: 50px;
+    height: 50px;
+} */
 
 
 /* Finish 페이지 */
