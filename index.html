@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LeeChanSin</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://kit.fontawesome.com/047f82d071.js" crossorigin="anonymous"></script>
     
     <style>
@@ -138,60 +135,62 @@
                 </div> -->
             </div>
         </div>
-        <div class="content">
-            <div class="content-text-4">
-                <div class="project-content">
-                    <div class="project-ppt">
-                        <div class="project-title">CRAYON</div>
-                        <div class="project-img">
-                            <img src="img/crayon-main.jpg" alt="">
-                        </div>
+        <div class="content project-page">
+            <div class="project-contents">
+                <h1 class="project-title">CRAYON</h1>
+                <div class="project-main-img">
+                    <img src="img/crayon-main.jpg">
+                </div>
+                <div class="project-comment">
+                    <div class="project-content">
+                        와따매 진짜 힘들었습느데이~
                     </div>
-                    <div class="project-ppt">
-                        인디스팟
-                    </div>
-                    <div class="project-ppt">
-                        piasystem
+                    <div class="project-skill">
+                        마라탕 맛있게 먹기를 담당했습니다!
                     </div>
                 </div>
-                <div class="indicaotr">
-                    <span class="prevArrow"><i class="fa-solid fa-arrow-left"></i></span>
-                    <span class="nextArrow"><i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+        </div>
+        <div class="content project-page">
+            <div class="project-contents">
+                <h1 class="project-title">IndieSpot</h1>
+                <div class="project-main-img indiespot-img">
+                    <img src="img/indiespot-main.png">
+                </div>
+                <div class="project-comment">
+                    <div class="project-content">
+                        와따매 이거 진짜 열심히 하긴했는데 예~
+                    </div>
+                    <div class="project-skill">
+                        이것도 마라탕 맛있게 먹었습니다!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content project-page">
+            <div class="project-contents">
+                <h1 class="project-title">PIA System</h1>
+                
+                <div class="project-main-img">
+                    <img src="img/piasystem-main.png">
+                </div>
+                <div class="project-comment">
+                    <div class="project-content">
+                        이건 말머 진짜 확실히 이론적으로 더 알아가야겠다는
+                        생각을 했는데예~
+                    </div>
+                    <div class="project-skill">
+                        잘 모루겠습니다! 헤헤
+                    </div>
                 </div>
             </div>
         </div>
         <div class="content">
-            <div class="content-text-5">
+            <div class="content-text-7">
                 <h1>마무리</h1>
             </div>
         </div>
     </div> 
-    <script>
-        $(document).ready(function(){
-            $('.project-content').slick({
-                dots : false, 		// 스크롤바 아래 점으로 페이지네이션 여부
-                arrows : true, 		// 옆으로 이동하는 화살표 표시 여부
-
-                prevArrow:$('.prevArrow'),
-                nextArrow:$('.nextArrow')
-            });
-        });
-        // $('.project-content').slick({
-        //     slidesToShow: 1,
-        //     slidesToScroll: 1,
-        //     arrows: false,
-        //     fade: true,
-        //     asNavFor: '.project-nav'
-        // });
-        // $('.project-nav').slick({
-        //     slidesToShow: 3,
-        //     slidesToScroll: 1,
-        //     asNavFor: '.project-content',
-        //     dots: true,
-        //     centerMode: true,
-        //     focusOnSelect: true
-        // });
-    </script>
 </body>
 <script src="index-scroll.js"> </script>
 </html>
