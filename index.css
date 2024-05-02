@@ -18,7 +18,7 @@ body{
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 12%;
+    height: 10%;
     z-index: 10;
 }
 .header img{
@@ -58,10 +58,7 @@ body{
     background-color: white;
 }
 
-    
-.wrap{
-    /* width: 100%; */
-}
+
 
 /* 한페이지 영역 */
 .content{ 
@@ -138,60 +135,148 @@ body{
 }
 
 /* Skill 페이지 */
-.content:nth-child(3){
+.content:nth-child(3) {
     background-color: #242424;
     color: white;
 }
 
-.skill-box{
-    display: inline-block;
-    background-color: white;
-    border-radius: 10%;
-    width: 10%;
-    height: auto;
+.content-text-3 {
+    display: flex; /* Flexbox로 변경 */
+    flex-wrap: wrap; /* 요소들이 넘치면 줄 바꿈 */
+    justify-content: space-between; /* 요소들을 좌우로 균등하게 배치 */
+    align-items: flex-start; /* 요소들의 맨 위쪽을 맞춤 */
+    height: 80%;
+    margin-top: 3%;
+    width: 80%;
 }
-.skill-title{
+
+.skill-box {
+    background-color: white;
+    border-radius: 10px;
+    width: 17%; /* 너비를 15%로 설정 */
+    margin-bottom: 2%; /* 각 요소들 사이의 간격 설정 */
+    padding: 20px; /* 내부 여백 추가 */
+    box-sizing: border-box; /* 내부 여백을 너비에 포함시킴 */
+}
+
+.skill-title {
     color: orange;
     font-weight: bold;
     border-bottom: 1px solid #242424;
     text-align: center;
-    padding: 10px;
+    padding: 10px 0; /* 상단과 하단에만 내부 여백 추가 */
 }
-.skill-icon{
-    
-}
-.skill-icon img{
-    width: 100%;
 
- 
+.skill-icon {
+    display: flex;
+    justify-content: center; /* 내부 요소를 가운데 정렬 */
 }
+
+.skill-icon img {
+    width: 100%; /* 이미지 너비를 70%로 설정 */
+}
+
 
 
 /* Project 페이지 */
 
-/* CRAYON PART */
-.content:nth-child(4){
-    background-color: #242424;
-    color: black;
-    
-}
 .project-page{
     position: relative;
 }
-.project-contents{
+.project-container{
     background-color: white;
     width: 80%;
     height: 80%;
     position: absolute;
-    bottom: 3%;
+    bottom: 5%;
     border-radius: 1%;
 }
-.project-title{
+
+.project-header{
     text-align: center;
+    margin-bottom: 5%;
+}
+
+.project-date{
+    color: gray;
     
 }
-.project-main-img img{
+.project-main-img{
     width: 30%;
+}
+.project-main-img img{
+    width: 100%;
+}
+
+.project-body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+.project-center-line{
+    border: 1px solid rgb(207, 197, 197);
+    height: 70%;
+}
+
+.project-comment{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40%;
+}
+
+.project-content{
+    height: 100%;
+    margin-bottom: 5%;
+}
+.project-content i{
+    margin-right: 10px;
+}
+.project-content button{
+    display: table;
+    padding: .5rem 1rem;
+    background-color: #222;
+    border-radius: .25rem;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 3%;
+}
+.project-content button:hover{
+    background-color: #4b4949;
+    
+}
+.project-skill{
+    height: 100%;
+}
+ul li{
+    list-style: none;
+    
+}
+ul{
+    padding: 0px;
+    margin-top: 10%;
+}
+li{
+    margin-bottom: 1%;
+}
+.useSkill{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.useSkill i{
+    margin-right: 2%;
+}
+/* CRAYON PART */
+.content:nth-child(4){
+    background-color: #242424;
+    color: black;
+}
+.crayon-title img{
+    width: 20%;
+    margin: 2% 0;
 }
 
 /* IndieSpot PART */
@@ -200,9 +285,15 @@ body{
     background-color: #233067;
     color: black;
 }
+.indiespot-title img{
+    width: 10%;
+    
+    
+}
 
 .indiespot-img img{
-    width: 18%;
+    width: 40%;
+    
 }
 
 /* PIA System PART */
@@ -210,6 +301,10 @@ body{
     
     background-color: #2D5CBE;
     color: black;
+}
+.paisystem-title img{
+    width: 13%;
+    
 }
 
 
