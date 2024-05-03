@@ -7,6 +7,7 @@ body{
     margin: 0;
     overflow: hidden; /* 스크롤 숨기기 */
     width: 100%;
+    
 }
 
 /* 헤더 영역 */
@@ -194,7 +195,7 @@ body{
 
 .project-header{
     text-align: center;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 .project-date{
@@ -203,6 +204,9 @@ body{
 }
 .project-main-img{
     width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .project-main-img img{
     width: 100%;
@@ -230,10 +234,18 @@ body{
 
 .project-content{
     height: 100%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
+    font-size: 18px;
+    font-weight: 500;
+}
+.font-em{
+    font-weight: bold;
+}
+.font-em2{
+    color: #ed3770;
 }
 .project-content i{
-    margin-right: 10px;
+    margin: 0 10px;
 }
 .project-content button{
     display: table;
@@ -243,6 +255,8 @@ body{
     color: #fff;
     cursor: pointer;
     margin-top: 3%;
+    font-size: 14px;
+    font-weight: 700;
 }
 .project-content button:hover{
     background-color: #4b4949;
@@ -257,14 +271,22 @@ ul li{
 }
 ul{
     padding: 0px;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 li{
-    margin-bottom: 1%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
 }
+
+li div{
+    width: 70%;
+}
+
 .useSkill{
     font-weight: bold;
     font-size: 1.1rem;
+    width: 30%;
 }
 .useSkill i{
     margin-right: 2%;
@@ -292,7 +314,7 @@ li{
 }
 
 .indiespot-img img{
-    width: 40%;
+    width: 50%;
     
 }
 
