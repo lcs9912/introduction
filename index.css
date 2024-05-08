@@ -93,20 +93,24 @@ body{
     position: relative;
 }
 .profile-img{
-    display: inline-block;
+    /* display: inline-block;
     position: absolute;
     top: 185px;
-    left: 200px;
+    left: 200px; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .profile-img img{
     border-radius: 50%;
     background-size: cover;
-    width: 24%;
+    width: 15%;
     
 }
 .intro{
-    width: 90%;
-    display: block;
+    
     font-size: 2em;
     font-weight: bold;
 }
@@ -337,4 +341,32 @@ li div{
 .content:nth-child(7){
     background-color: #242424;
     color: white;
+    position: relative;
+    
+}
+.finish-box{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+.finish-link{
+    margin-bottom: 20%;
+}
+.finish-link div{
+    margin-bottom: 2%;
+}
+.finish-link img{
+    width: 20%;
+}
+.finish-title{
+    color: orange;
+    font-size: 3em;
+}
+
+.finish-comment{
+    font-size: 1.5em;
+}
+
+.finish-contact div{
+    margin-bottom: 2%;
 }
